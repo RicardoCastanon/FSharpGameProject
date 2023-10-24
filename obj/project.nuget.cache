@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "h+IV/Hzy5/LeHwNJZGE5v7pIRbJx9pyUhS7MTiDfwTNIbD+hyOntgOr+TpDffusWZUPUKTvhvQMdbaBG3Bk1VA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ricar\\Documents\\School\\2023-24 Senior Year\\Fall 2023 - Programming Paradigms\\Game Project\\Game Project.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ricar\\.nuget\\packages\\fsharp.core\\7.0.400\\fsharp.core.7.0.400.nupkg.sha512"
+  ],
+  "logs": []
+}
