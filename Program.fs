@@ -3,11 +3,17 @@
     description : string
 }
 
-type Exit =
-    | PassableExit of Details * destination : Room
-    | LockedExit of Details * key : Item
-    | NoExit of Details
+type Item = {
+    Details : Details
+}
 
+type RoomId =
+    | RoomId of string
+
+type Exit =
+    | PassableExit of Details * destination : RoomId
+    | LockedExit of Details * key : Item
+    | NoExit of Details option
 
 type Exits = {
     North : Exit
@@ -17,8 +23,20 @@ type Exits = {
 }
 
 type Room = {
+    Id : RoomId
     Details : Details
+    Items : Item list
+    Exits : Exits
 }
 
+type Player = {
+    Details : Details
+    Location : RoomId
+    Inventory : Item list
+}
 
+type World = {
+    Rooms : Map<RoomId, Room>
+    Player : Player 
+}
 
